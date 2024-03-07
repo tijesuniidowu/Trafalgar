@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Black: hsl(0, 0%, 0%);
+  --Blue: hsla(215, 91%, 62%, 1);
+  --gray: hsla(0, 10%, 87%, 1);
+  --light-gray: hsla(0, 0%, 99%, 0.5);
+  --White: hsla(0, 0%, 100%, 1);
+  --linear: hsla(234, 95%, 50%, 0.57);
+  --linear2: hsla(234, 55%, 65%, 0.88);
+  --Roboto: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(var(--linear), var(--linear2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 800px;
+  display: flex;
+  max-width: 90%;
+  box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.15);
+  border-radius: 10px;
+}
+
+.left {
+  width: 50%;
+  background: var(--Blue);
+  padding: 80px 0;
+  border-radius: 10px 0 0 10px;
+}
+
+.left h1 {
+  font-size: 3vw;
+  font-weight: 700;
+  color: var(--White);
+  font-family: var(--Roboto);
+  line-height: 40px;
+  padding: 0 4rem 0 20px;
+}
+
+.left p {
+  font-size: 1.25vw;
+  font-weight: 400;
+  color: var(--White);
+  font-family: var(--Roboto);
+  line-height: 20px;
+  padding: 7px 20px 0px;
+}
+
+.left img {
+  width: 100%;
+  height: fit-content;
+  margin-top: 70px;
+  padding-right: 30px;
+}
+
+.right {
+  width: 50%;
+  background: var(--White);
+  border-radius: 0 10px 10px 0;
+  padding: 50px 20px;
+}
+
+.started {
+  text-align: center;
+}
+
+.started h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3.3vw;
+  font-weight: 700;
+  color: var(--Black);
+}
+
+.started p {
+  font-family: var(--Roboto);
+  font-size: 1.1vw;
+  font-weight: 500;
+  color: var(--Black);
+}
+
+.started p a {
+  text-decoration: none;
+  color: green;
+}
+
+.link {
+  margin-top: 30px;
+  display: flex;
+  gap: 6px;
+}
+
+.link li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--gray);
+  list-style: none;
+  border-radius: 6px;
+  gap: 6px;
+  padding: 0px 10px;
+}
+
+.link li img {
+  width: 10%;
+}
+
+.link li a {
+  color: var(--Black);
+  text-decoration: none;
+  font-family: var(--Roboto);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.or p {
+  margin: 28px 0;
+  text-align: center;
+  font-family: var(--Roboto);
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+.or p::before {
+  position: absolute;
+  top: 14.2rem;
+  left: 56vw;
+  width: 90px;
+  height: 1px;
+  background: var(--Blue);
+  content: "";
+}
+
+.or p::after {
+  position: absolute;
+  top: 14.2rem;
+  left: 60.5rem;
+  width: 90px;
+  height: 1px;
+  background: var(--Blue);
+  content: "";
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 70px;
+}
+
+fieldset {
+  border: none;
+  /* padding: 2rem 0; */
+}
+
+label {
+display: block;
+  margin: 0.8rem 0;
+  font-family: var(--Roboto);
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+input {
+  background-color: var(--light-gray);
+  border: 1px solid hsla(0, 0%, 93%, 1);
+  box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.15);
+  margin: 4px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  transition: all 0.3s ease;
+}
+
+input:hover{
+  outline: 2px solid var(--Blue);
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  padding: 10px 0 10px 6px;
+  /* color: var(--Blue); */
+}
+
+::placeholder {
+  color: var(--Blue);
+}
+
+button {
+  margin-top: 12px;
+  padding: 8px 6.2rem;
+  font-size: 1.15vw;
+  font-weight: 700;
+  font-family: var(--Roboto);
+  background-color: var(--Blue);
+  color: var(--White);
+  border: none;
+  border-radius: 6px;
+  /* transition: all 0.3s ease; */
+}
+
+button:hover {
+  background-color: var(--White);
+color: var(--Blue);
+outline: 2px solid var(--Blue);
+}
+
+@media screen and (max-width: 1024px) {
+  .link li a {
+    font-size: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  
+
+}
+@media screen and (max-width: 990px) {
+  body{
+    padding: 0;
+    margin: 0;
+  }
+
+  main{
+    flex-direction: column;
+    max-width: 100%;
+    width: 500px;
+}
+
+.left {
+  width: 100%;
+  background: var(--Blue);
+  border-radius: 0px;
+  padding: 50px 0;
+}
+
+.left h1 {
+  font-size: 4vw;
+  font-family: var(--Roboto);
+}
+
+.left p {
+  font-size: 1.7vw;
+}
+
+.left img {
+  padding: 30px;
+}
+
+.right{
+  width: 100%;
+  border-radius: 0px;
+}
+}
