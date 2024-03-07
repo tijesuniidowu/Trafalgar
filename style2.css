@@ -227,7 +227,7 @@ outline: 2px solid var(--Blue);
   height: 1px;
   background: var(--Blue);
   content: "";
-  display: block;
+  /* display: block; */
 }
 
 .or p::after {
@@ -238,7 +238,7 @@ outline: 2px solid var(--Blue);
   height: 1px;
   background: var(--Blue);
   content: "";
-  display: block;
+  /* display: block; */
 }
 }
 
@@ -255,6 +255,7 @@ outline: 2px solid var(--Blue);
     height: 1px;
     background: var(--Blue);
     content: "";
+    display: block;
   }
   
   .or p::after {
@@ -265,6 +266,7 @@ outline: 2px solid var(--Blue);
     height: 1px;
     background: var(--Blue);
     content: "";
+    display: block;
   }
 }
 
