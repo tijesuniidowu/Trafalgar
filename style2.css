@@ -441,15 +441,20 @@ button {
   }
 
   .or p::before {
-    display: none;
+    top: 47rem;
+    left: 15vw;
+    width: 100px;
   }
   
   .or p::after {
-display: none;
+    top: 47rem;
+    left: 58vw;
+    width: 100px;
   }
-}
+  }
 
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 320px) {
   .left h1 {
     font-size: 28px;
     padding: 0 6rem 0 20px;
@@ -465,15 +470,13 @@ display: none;
 
   .or p::before {
     top: 43.8rem;
-    left: 12vw;
+    left: 11vw;
     width: 100px;
-    display: block;
   }
   
   .or p::after {
     top: 43.8rem;
-    left: 56.5vw;
+    left: 58vw;
     width: 100px;
-    display: block;
   }
 }
