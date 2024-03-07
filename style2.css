@@ -28,6 +28,7 @@ body {
 main {
   width: 800px;
   display: flex;
+  /* justify-content: center; */
   max-width: 90%;
   box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.15);
   border-radius: 10px;
@@ -60,7 +61,7 @@ main {
 
 .left img {
   width: 100%;
-  height: fit-content;
+  /* height: fit-content; */
   margin-top: 70px;
   padding-right: 30px;
 }
@@ -109,7 +110,7 @@ main {
   list-style: none;
   border-radius: 6px;
   gap: 6px;
-  padding: 0px 10px;
+  padding: 0px 2px;
 }
 
 .link li img {
@@ -130,26 +131,29 @@ main {
   font-family: var(--Roboto);
   font-size: 1.1vw;
   font-weight: 500;
+  /* display: none; */
 }
 
 .or p::before {
   position: absolute;
-  top: 14.2rem;
+  top: 17rem;
   left: 56vw;
   width: 90px;
   height: 1px;
   background: var(--Blue);
   content: "";
+  display: none;
 }
 
 .or p::after {
   position: absolute;
-  top: 14.2rem;
-  left: 60.5rem;
+  top: 17rem;
+  left: 54.5rem;
   width: 90px;
   height: 1px;
   background: var(--Blue);
   content: "";
+  display: none;
 }
 
 .form {
@@ -214,16 +218,56 @@ color: var(--Blue);
 outline: 2px solid var(--Blue);
 }
 
+@media screen and (max-width: 1440px) {
+.or p::before {
+  position: absolute;
+  top: 15rem;
+  left: 55.5vw;
+  width: 90px;
+  height: 1px;
+  background: var(--Blue);
+  content: "";
+  display: block;
+}
+
+.or p::after {
+  position: absolute;
+  top: 15rem;
+  left: 59.5rem;
+  width: 90px;
+  height: 1px;
+  background: var(--Blue);
+  content: "";
+  display: block;
+}
+}
+
 @media screen and (max-width: 1024px) {
   .link li a {
     font-size: 1.3vw;
   }
-}
 
-@media screen and (max-width: 990px) {
+  .or p::before {
+    position: absolute;
+    top: 13.3rem;
+    left: 58.4vw;
+    width: 90px;
+    height: 1px;
+    background: var(--Blue);
+    content: "";
+  }
   
-
+  .or p::after {
+    position: absolute;
+    top: 13.3rem;
+    left: 46.1rem;
+    width: 90px;
+    height: 1px;
+    background: var(--Blue);
+    content: "";
+  }
 }
+
 @media screen and (max-width: 990px) {
   body{
     padding: 0;
@@ -240,16 +284,17 @@ outline: 2px solid var(--Blue);
   width: 100%;
   background: var(--Blue);
   border-radius: 0px;
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 .left h1 {
-  font-size: 4vw;
+  font-size: 36px;
   font-family: var(--Roboto);
+  padding: 0 9rem 0 20px;
 }
 
 .left p {
-  font-size: 1.7vw;
+  font-size: 16px;
 }
 
 .left img {
@@ -260,4 +305,175 @@ outline: 2px solid var(--Blue);
   width: 100%;
   border-radius: 0px;
 }
+
+.started h1 {
+  font-size: 40px;
+}
+
+.started p {
+  font-size: 14px;
+}
+
+.link {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.link li a {
+  font-size: 14px;
+}
+
+.or p {
+  font-size: 14px;
+}
+
+.or p::before {
+  top: 55.85rem;
+  left: 37vw;
+  width: 100px;
+}
+
+.or p::after {
+  top: 55.85rem;
+  left: 53vw;
+  width: 100px;
+}
+
+label {
+  margin: 1.2rem 0;
+  font-size: 14px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  padding: 10px 0 10px 6px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 6.8rem;
+  font-size: 14px;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+  .or p::before {
+    left: 34vw;
+    width: 100px;
+  }
+  
+  .or p::after {
+    left: 53vw;
+    width: 100px;
+  }
+  
+  button {
+    padding: 10px 7rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .or p::before {
+    left: 31vw;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .left h1{
+    line-height: 36px;
+  }
+
+  .left p {
+    font-size: 14px;
+  }
+
+  .left img {
+    margin-top: 40px;
+  }
+
+  .or p::before {
+    top: 50.5rem;
+    left: 20vw;
+    width: 100px;
+  }
+  
+  .or p::after {
+    top: 50.5rem;
+    left: 56vw;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .left h1 {
+    font-size: 32px;
+    font-family: var(--Roboto);
+    padding: 0 8rem 0 20px;
+    line-height: 32px;
+  }
+
+  .started h1 {
+    font-size: 34px;
+  }
+  
+  .started p {
+    font-size: 12px;
+  }
+  
+  .link {
+    margin-top: 25px;
+  }
+
+  .link li {
+    gap: 20px;
+    padding: 2px 10px;
+  }
+  
+  .link li a {
+    font-size: 14px;
+  }
+  
+  .or p {
+    font-size: 12px;
+  }
+
+  .or p::before {
+    display: none;
+  }
+  
+  .or p::after {
+display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .left h1 {
+    font-size: 28px;
+    padding: 0 6rem 0 20px;
+  }
+
+  .left img {
+    margin-top: 30px;
+  }
+
+  .or p {
+    margin: 24px 0 16px;
+  }
+
+  .or p::before {
+    top: 43.8rem;
+    left: 12vw;
+    width: 100px;
+    display: block;
+  }
+  
+  .or p::after {
+    top: 43.8rem;
+    left: 56.5vw;
+    width: 100px;
+    display: block;
+  }
 }
