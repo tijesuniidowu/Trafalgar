@@ -361,24 +361,43 @@ button {
 
 
 @media screen and (max-width: 768px) {
+  main{
+    width: 100%;
+      overflow-x: hidden;
+  }
+
   .or p::before {
+    top: 134vw;
     left: 34vw;
     width: 100px;
   }
   
   .or p::after {
+    top: 134vw;
     left: 53vw;
     width: 100px;
   }
   
+  fieldset {
+   width: 90%;
+  }
+
   button {
     padding: 10px 7rem;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 650px) {
   .or p::before {
+    top: 146.5vw;
     left: 31vw;
+    width: 100px;
+  }
+
+  .or p::after {
+    top: 146.5vw;
+    left: 53vw;
     width: 100px;
   }
 }
